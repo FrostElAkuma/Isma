@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--We studied about meta tags in class-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Eye problem</title>
+
+<!--bootstrap 5-->
+<link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/">
+<!--Bootstrap style sheet-->
+<link href="bootstrap.min.css" rel="stylesheet">
+<!--Our style sheet-->
+<link rel="stylesheet" href="home style.css">
+<!--The carousel style sheet-->
+<link rel="stylesheet" href="carousel.css">
+
+<!--To link our app.Js-->
+<script src="app.js"></script>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="headers.css" rel="stylesheet">
+  </head>
+  <body>
+
+<main>
+
+  <!--Our NavBar Section-->
+  <!--Extra code to add if we want it to stick to the top: navbar-light bg-light fixed-top-->
+  <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      
+      <a class="navbar-brand noClick" href="#">
+        <img src="img/earLogo.png" alt="" width="40" height="36">
+        <p style="display: inline;" class="translate1">Project Name</p>
+      </a>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="index.html" class="nav-link px-2 link-secondary hover-effect hover translate2" da>Hearing Aids</a></li>
+        <li><a href="#devs" class="nav-link px-2 link-secondary hover-effect hover translate3">Developers</a></li>
+        <li><a href="#features" class="nav-link px-2 link-secondary hover-effect hover translate4">Features</a></li>
+        <li><a href="Eye.html" class="nav-link px-2 link-dark hover-effect hover translate5">Eye problem</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-outline-primary me-2 translate6"><a style="text-decoration: none;" href="signUp.html">Login</a></button>
+        <button type="button" class="btn btn-primary translate7"><a style="text-decoration: none; color: aliceblue;" href="signUp.html">Sign-up</a></button>
+      </div>
+
+      <!--Our Language Change Button-->
+      <form class="d-flex" style="margin-right: 10px;">
+        <!--We did type ="button" because the usual type="submit" will refresh the page and the arabic will be gone-->
+        <button class="btn btn-outline-success btnAr" type="button" onclick = "Arabic1();">عربي</button>
+      </form>
+      
+    </header>
+  </div>
+
+  <!--Carousel Section-->
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <!--Carousel 1-->
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="https://www.hearingaidsource.ca/wp-content/uploads/2018/10/Widex-Evoke-Dark-Grey.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#fff"/>
+          <image href="img/C1.jpeg" height="100%" width="100%" />
+        </svg>
+        
+        <div class="container">
+          <div style="color: #000;" class="carousel-caption text-start">
+            <h1>Phonak</h1>
+            <!--<p>Phonak is industry-leading expertise which bring you the best modern hearing technology for your hearing needs.</p>-->
+            <p><a class="btn btn-lg btn-primary translate8" href="signUp.html">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!--Carousel 2-->
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#fff"/>
+          <image href="https://tukuz.com/wp-content/uploads/2020/02/oticon-logo-vector.png" height="100%" width="100%" /></svg>
+<br>    
+        <div class="container">
+          <div style="color: #000;" class="carousel-caption ">
+            <!--<h1>Oticon</h1>
+            <p>Oticon Own is the world's first in-the-ear hearing aid that works more like the brain because it learned through experience.</p>
+              We removed the h1 and p tag because it won't go well with the image
+            -->
+            <p style="margin-bottom: 83px;"><a class="btn btn btn-primary translate8" href="signUp.html">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!--Carousel 3-->
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#fff"/>
+          <image href="img/C3.jpeg" height="100%" width="100%" /></svg>
+
+        <div class="container">
+          <div style="color: #000;" class="carousel-caption text-end">
+            <h1>Widex</h1>
+            <!--<p>All you should experience is a life lived, enjoyed and heard in the most natural way, while in the background, your hearing aids employ the most advanced sound</p>-->
+            <p><a class="btn btn-lg btn-primary translate8" href="signUp.html">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span style="background-color: #000;" class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span  style="background-color: #000; "class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Developers
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div id="devs" class="row">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2 class="fw-normal translate9">Developer</h2>
+        <p class="translate10">Hamad Mohammed Hamad Aljenibi <strong>(Hear Problem)</strong></p>
+        <!--<p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>-->
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2 class="fw-normal translate9">Developer</h2>
+        <p class="translate11">Abdullah Osama Attia</p>
+        <!--<p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>-->
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2 class="fw-normal translate9">Developer</h2>
+        <p class="translate12">Moaz Osama Attia</p>
+        <!--<p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>-->
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr id="features" class="featurette-divider">
+
+    <!--First Item-->
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1 translate13"> Phonak Roger Pen <span class="text-muted"></span></h2>
+        <p class="lead translateX"><strong>Roger Pen</strong> A universal, cutting-edge wireless microphone that helps people with a hearing loss to understand more speech when in noise, in reverberant environments and listening over distance.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#fff"/><text x="50%" y="50%" fill="#fff" dy=".3em">500x500</text>
+          <image href="https://blogs.cdn.medel.com/blog.medel.com/uploads/20180628144851/packshot_roger_pen_1.1_lying_perspective_052-3293-000t4-e1496841737776.jpg" height="100%" width="100%" /></svg>
+        </svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!--Second Item-->
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1 translate14">Oticon Connectclip<span class="text-muted"></span></h2>
+        <p class="lead translate15"><strong>ConnectClip</strong> transforms Opn hearing aids into a high-quality wireless headset enabling the user to: Make and receive hands-free calls in the car or on the go streaming to both ears.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#fff"/><text x="50%" y="50%" fill="#fff" dy=".3em">500x500</text>
+          <image href="https://online-hearingaids.com/wp-content/uploads/2018/06/Oticon_ConnectClip.jpg" height="100%" width="100%" /></svg>
+        </svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!--Third Item-->
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1 translate16">Widex pro link<span class="text-muted"></span></h2>
+        <p class="lead translate17"><strong>PRO LINK</strong> is the new, wireless fitting device that makes life easier for you and your clients. The new PRO LINK enables you to wirelessly fit all Widex hearing aids with reliable COMPASS GPS software.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#fff"/><text x="50%" y="50%" fill="#fff" dy=".3em">500x500</text>
+          <image href="https://www.warnertechcare.com/media/catalog/product/cache/e121426f35e7a13fa3ac3ba0adff9586/7/1/718221.jpg" height="100%" width="100%" /></svg>
+        </svg>
+
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+</main>
+
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5 class="translate18">Hearing Aids</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2 hover translate19"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2 hover translate3"><a href="#devs" class="nav-link p-0 text-muted">Developers</a></li>
+          <li class="nav-item mb-2 hover translate4"><a href="#features" class="nav-link p-0 text-muted">Features</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5 class="translate20">Eye problem</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2 hover translate21"><a href="Eye.html" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2 hover translate3"><a href="Eye.html#devs" class="nav-link p-0 text-muted">Developers</a></li>
+            <li class="nav-item mb-2 hover translate4"><a href="Eye.html#features" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2 hover translate22"><a href="#" class="nav-link p-0 text-muted">achromatopsia</a></li>
+            <li class="nav-item mb-2 hover translate23"><a href="#" class="nav-link p-0 text-muted">Eye glasses</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5 class="translate24">Subscribe to our newsletter</h5>
+          <p class="translate25">Monthly digest of what's new and exciting from us.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden translate26">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary translate27" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p class="translate28">&copy; 2022 Company, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+    <script src="bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>

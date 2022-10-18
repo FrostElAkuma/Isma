@@ -1,0 +1,17 @@
+.noClick {
+    pointer-events: none;
+   cursor: default;
+}
+
+.hover {
+    
+    transition: 0.5s;
+}
+
+.hover:hover {
+    transform: scale(1.1);
+}
+
+.hid {
+    display: none;
+}

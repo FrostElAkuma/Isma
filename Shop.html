@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--We studied about meta tags in class-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Helping Application</title>
+
+<!--bootstrap 5-->
+<link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/">
+<!--Bootstrap style sheet-->
+<link href="bootstrap.min.css" rel="stylesheet">
+<!--Our style sheet-->
+<link rel="stylesheet" href="home style.css">
+<!--The carousel style sheet-->
+<link rel="stylesheet" href="carousel.css">
+<!--The shop style sheet-->
+<link rel="stylesheet" href="shop.css">
+<!--Importing Jquery for our show more fade in-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--To link our app.Js-->
+<script src="app.js"></script>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="headers.css" rel="stylesheet">
+  </head>
+  <body>
+
+<main>
+
+  <!--Our NavBar Section-->
+  <!--Extra code to add if we want it to stick to the top: navbar-light bg-light fixed-top-->
+  <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      
+      <a class="navbar-brand noClick" href="#">
+        <img src="img/earLogo.png" alt="" width="40" height="36">
+        <p style="display: inline;" class="translate1">Isma</p>
+      </a>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="Shop.html" class="nav-link px-2 link-dark hover-effect hover translateX2" da>Shop</a></li>
+        <li><a href="index.html" class="nav-link px-2 link-secondary hover-effect hover translate2" da>Hearing Aids</a></li>
+        <li><a href="#devs" class="nav-link px-2 link-secondary hover-effect hover translate3">Featured</a></li>
+        <li><a href="#features" class="nav-link px-2 link-secondary hover-effect hover translate29">Products</a></li>
+        <li><a href="application.html" class="nav-link px-2 link-secondary hover-effect hover translate5">Helping Applications</a></li>
+        <li><a href="Eye.html" class="nav-link px-2 link-secondary hover-effect hover translateX5 disabled">Coming Soon Enchroma glasses</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-outline-primary me-2 translate6"><a style="text-decoration: none;" href="signUp.html">Login</a></button>
+        <button type="button" class="btn btn-primary translate7"><a style="text-decoration: none; color: aliceblue;" href="signUp.html">Sign-up</a></button>
+      </div>
+
+      <!--Our Language Change Button-->
+      <form class="d-flex" style="margin-right: 10px;">
+        <!--We did type ="button" because the usual type="submit" will refresh the page and the arabic will be gone-->
+        <button class="btn btn-outline-success btnAr" type="button" onclick = "Arabic3();">عربي</button>
+      </form>
+      
+    </header>
+  </div>
+
+  <!--Carousel Section-->
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <!--Carousel 1-->
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="https://www.hearingaidsource.ca/wp-content/uploads/2018/10/Widex-Evoke-Dark-Grey.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#fff"/>
+          <image href="https://online-hearingaids.com/wp-content/uploads/2019/04/Opn-S-miniRITE-R_chroma_beige.png" height="100%" width="100%" />
+        </svg>
+        
+        <div class="container">
+          <div style="color: #000;" class="carousel-caption text-start">
+            <h1>Oticon MiniRITE</h1>
+            <!--<p>Phonak is industry-leading expertise which bring you the best modern hearing technology for your hearing needs.</p>-->
+            <p><a class="btn btn-lg btn-primary translate8" href="https://online-hearingaids.com/oticon-more-1-minirite-r-rechargeable/?attribute_pa_kleur=chroma-beige-90-en-2&gclid=CjwKCAjw-rOaBhA9EiwAUkLV4teFFd7if0SqDqYf5jx3f6DvJe2aq6Ea3UAOwRe9wqEnbhWjFjIOWxoCxZIQAvD_BwE">Buy</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!--Carousel 2-->
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#fff"/>
+          <image href="https://online-hearingaids.com/wp-content/uploads/2019/09/Oticon-Xceed-BTE-SP-ChromaBeige-C090.png" height="100%" width="100%" /></svg>
+<br>    
+        <div class="container">
+          <div style="color: #000;" class="carousel-caption text-start">
+            <h1>Oticon Xceed 2</h1>
+            <!--<p>Oticon Own is the world's first in-the-ear hearing aid that works more like the brain because it learned through experience.</p>
+              We removed the h1 and p tag because it won't go well with the image-->
+            
+            <p><a class="btn btn-lg btn-primary translate8" href="https://online-hearingaids.com/oticon-xceed-2-bte-sp/?attribute_pa_kleur=chroma-beige-90-en-2&gclid=CjwKCAjw-rOaBhA9EiwAUkLV4vhD5YuBBmMkqs72yPQj8Y1chm6gu20jwW_Dt_tYVZecVWZv9_g4phoCI90QAvD_BwE">Buy</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!--Carousel 3-->
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#fff"/>
+          <image href="https://online-hearingaids.com/wp-content/uploads/2020/02/Phonak_Naida_M-SP_H0.png" height="100%" width="100%" /></svg>
+
+        <div class="container">
+          <div style="color: #000;" class="carousel-caption text-end">
+            <h1>Phonak Naida</h1>
+            <!--<p>All you should experience is a life lived, enjoyed and heard in the most natural way, while in the background, your hearing aids employ the most advanced sound</p>-->
+            <p><a class="btn btn-lg btn-primary translate8" href="https://online-hearingaids.com/phonak-naida-p90-up/?attribute_pa_kleur=sand-beige-p1-en&gclid=CjwKCAjw-rOaBhA9EiwAUkLV4l9K7Y5FIFmXfiwBWshhescrtf5k01GLL5mttt34k8BU7tcnUpUzqhoCJysQAvD_BwE">Buy</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span style="background-color: #000;" class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span  style="background-color: #000; "class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Products
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div id="devs" class="row">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#fff"/><text x="50%" y="50%" fill="#fff" dy=".3em">140x140</text>
+          <image href="https://online-hearingaids.com/wp-content/uploads/2018/10/PhonakaudeoM312P5.jpg" height="100%" width="100%" /></svg>
+        </svg>
+
+        <h2 class="fw-normal translate9">Phonak</h2>
+        <p class="translate10">Sound Audéo</p>
+        <p><a class="btn btn-secondary translateV" href="https://online-hearingaids.com/phonak-audeo-m30-312/?attribute_pa_kleur=champagne-p5-en-2&gclid=CjwKCAjw-rOaBhA9EiwAUkLV4u6AXjU6LP-mbbnm6EfSCtUsljr98K_hI8qZjnL_VtDu5R9PxytNBhoCbegQAvD_BwE">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#fff"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+          <image href="https://cdn.shopify.com/s/files/1/0260/0229/2782/products/black_paradise_pair_312_1024x1024.jpg?v=1655307837" height="100%" width="100%" /></svg>
+        </svg>
+
+        <h2 class="fw-normal translate9">Phonak</h2>
+        <p class="translate11">Audeo </p>
+        <p><a class="btn btn-secondary translateV" href="https://hearmore4less.com/products/phonak-audeo-paradise-30-essential-model?variant=32790708453422">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#fff"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+          <image href="https://cdn.shopify.com/s/files/1/0260/0229/2782/products/AudeoM312TGraphiteGray_cc8d1dd1-e07b-455b-a61b-b014847e63b7_1024x1024.png?v=1608309798" height="100%" width="100%" />
+        </svg>
+
+        <h2 class="fw-normal translate9">Phonak </h2>
+        <p class="translate12">Marvel </p>
+        <p><a class="btn btn-secondary translateV" href="https://hearmore4less.com/products/marvel-30-essential-model?variant=32791709548590">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+    <!-- START THE SHOP -->
+
+    <hr id="features" class="featurette-divider">
+
+    <h3 class ="translate13" style="text-align: center;">Some of the products </h3>
+
+    <br><br><br><br><br><br>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4 main">
+        <div class="col">
+            <div class="card">
+              <!--Image for the card-->
+              <img src="https://online-hearingaids.com/wp-content/uploads/2019/09/Oticon-Xceed-BTE-SP-ChromaBeige-C090.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Oticon Xceed 2 BTE SP</h5>
+                <p class="card-text translate14">Order and pay for your hearing aid easily online The hearing care professional will set your hearing aid 100% remotely and send it to you within a few days.
+                </p>
+                <div style="text-align: center;">
+                  <a href="https://online-hearingaids.com/oticon-xceed-2-bte-sp/?attribute_pa_kleur=chroma-beige-90-en-2&gclid=CjwKCAjw-rOaBhA9EiwAUkLV4vhD5YuBBmMkqs72yPQj8Y1chm6gu20jwW_Dt_tYVZecVWZv9_g4phoCI90QAvD_BwE" class="btn btn-primary btn1 translate8" style="vertical-align: top; ">Buy</a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card">
+              <img src="https://online-hearingaids.com/wp-content/uploads/2019/04/Opn-S-miniRITE-R_chroma_beige.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Oticon More 1 MiniRITE R Rechargeable</h5>
+                <p class="card-text translate15">The Oticon More hearing aid has an appropriate name, offering you more of everything: more meani</p>
+                <div style="text-align: center;">
+                  <a href="https://online-hearingaids.com/oticon-more-1-minirite-r-rechargeable/?attribute_pa_kleur=chroma-beige-90-en-2&gclid=CjwKCAjw-rOaBhA9EiwAUkLV4teFFd7if0SqDqYf5jx3f6DvJe2aq6Ea3UAOwRe9wqEnbhWjFjIOWxoCxZIQAvD_BwE" class="btn btn-primary btn1 translate8" style="vertical-align: top; ">Buy</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <!--Image for the card-->
+              <img src="https://online-hearingaids.com/wp-content/uploads/2020/02/Phonak_Naida_M-SP_H0.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Phonak Naida P90-UP</h5>
+                <p class="card-text translate16">The Phonak Naida hearing aid has an appropriate name, offering you more of everything: more meani</p>
+                <div style="text-align: center;">
+                  <a href="https://online-hearingaids.com/phonak-naida-p90-up/?attribute_pa_kleur=sand-beige-p1-en&gclid=CjwKCAjw-rOaBhA9EiwAUkLV4l9K7Y5FIFmXfiwBWshhescrtf5k01GLL5mttt34k8BU7tcnUpUzqhoCJysQAvD_BwE" class="btn btn-primary btn1 translate8" style="vertical-align: top; ">Buy</a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card">
+              <img src="https://online-hearingaids.com/wp-content/uploads/2018/10/PhonakaudeoM312P5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Phonak Audéo M30-312</h5>
+                <p class="card-text translate17">Order and pay for your hearing aid easily online The hearing care professional will set your hearing aid 100% remotely and send it to you within a few days.</p>
+                <div style="text-align: center;">
+                    <a href="https://online-hearingaids.com/phonak-audeo-m30-312/?attribute_pa_kleur=champagne-p5-en-2&gclid=CjwKCAjw-rOaBhA9EiwAUkLV4u6AXjU6LP-mbbnm6EfSCtUsljr98K_hI8qZjnL_VtDu5R9PxytNBhoCbegQAvD_BwE" class="btn btn-primary btn1 translate8" style="vertical-align: top; ">Buy</a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col hid">
+            <div class="card">
+              <img src="https://cdn.shopify.com/s/files/1/0260/0229/2782/products/black_paradise_pair_312_1024x1024.jpg?v=1655307837" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Phonak Audeo Paradise P30</h5>
+                <p class="card-text translate18">Phonak Audéo Paradise excels in hearing performance and hosts several elevated features. It delivers unrivaled sound quality and empowering smart apps.</p>
+                <div style="text-align: center;">
+                    <a href="https://hearmore4less.com/products/phonak-audeo-paradise-30-essential-model?variant=32790708453422" class="btn btn-primary btn1 translate8" style="vertical-align: top; ">Buy</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col hid">
+            <div class="card">
+              <img src="https://cdn.shopify.com/s/files/1/0260/0229/2782/products/AudeoM312TGraphiteGray_cc8d1dd1-e07b-455b-a61b-b014847e63b7_1024x1024.png?v=1608309798" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Phonak Audeo Marvel M30</h5>
+                <p class="card-text translate19">Phonak Audéo Marvel focuses on what you expect from a first-class hearing aid a clear, rich sound experience.</p>
+                <div style="text-align: center;">
+                    <a href="https://hearmore4less.com/products/marvel-30-essential-model?variant=32791709548590" class="btn btn-primary btn1 translate8" style="vertical-align: top; ">Buy</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div style="text-align: center; margin-top: 20px;">
+          <button type="submit" id="btn2" class="btn btn-primary translateS">Show more</button>
+        </div>
+    </div>
+
+    <hr id="features" class="featurette-divider">
+
+</main>
+
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5 class="translateY">Hearing Aids</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2 hover translateY1"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2 hover translate3"><a href="index.html#devs" class="nav-link p-0 text-muted">Developers</a></li>
+          <li class="nav-item mb-2 hover translate4"><a href="index.html#features" class="nav-link p-0 text-muted">Features</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5 class="translate20">Helping Applications</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2 hover translate21"><a href="application.html" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2 hover translate4"><a href="application.html" class="nav-link p-0 text-muted">Features</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5 class="translateG2">Shop</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2 hover translateX21"><a href="Shop.html" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2 hover translate4"><a href="Shop.html#devs" class="nav-link p-0 text-muted">Featured</a></li>
+            <li class="nav-item mb-2 hover translateX29"><a href="Shop.html#features" class="nav-link p-0 text-muted">Products</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5 class="translate24">Subscribe to our newsletter</h5>
+          <p class="translate25">Monthly digest of what's new and exciting from us.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden translate26">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary translate27" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p class="">&copy; 2022 Isma, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+    <script src="bootstrap.bundle.min.js"></script>
+
+    <!--Jquery script for show more and alerts-->
+    <script>
+
+        $(function() {
+        
+            var amount = document.getElementById
+
+            $("#btn2").on("click", function() {
+            $(".hid").fadeIn(2000);
+            $("#btn2").hide();
+            });
+            
+
+        });
+        </script>
+
+      
+  </body>
+</html>

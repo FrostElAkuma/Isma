@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--We studied about meta tags in class-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Helping Application</title>
+
+<!--bootstrap 5-->
+<link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/">
+<!--Bootstrap style sheet-->
+<link href="bootstrap.min.css" rel="stylesheet">
+<!--Our style sheet-->
+<link rel="stylesheet" href="home style.css">
+<!--The carousel style sheet-->
+<link rel="stylesheet" href="carousel.css">
+
+<!--To link our app.Js-->
+<script src="app.js"></script>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="headers.css" rel="stylesheet">
+  </head>
+  <body>
+
+<main>
+
+  <!--Our NavBar Section-->
+  <!--Extra code to add if we want it to stick to the top: navbar-light bg-light fixed-top-->
+  <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      
+      <a class="navbar-brand noClick" href="#">
+        <img src="img/earLogo.png" alt="" width="40" height="36">
+        <p style="display: inline;" class="translate1">Isma</p>
+      </a>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="application.html" class="nav-link px-2 link-dark hover-effect hover translateX1">Helping Applications</a></li>
+        <li><a href="#features" class="nav-link px-2 link-secondary hover-effect hover translate4">Features</a></li>
+        <li><a href="index.html" class="nav-link px-2 link-secondary hover-effect hover translate2" da>Hearing Aids</a></li>
+        <li><a href="Shop.html" class="nav-link px-2 link-secondary hover-effect hover translateX2" da>Shop</a></li>
+        <li><a href="Eye.html" class="nav-link px-2 link-secondary hover-effect hover translate5 disabled">Coming Soon Enchroma glasses</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-outline-primary me-2 translate6"><a style="text-decoration: none;" href="signUp.html">Login</a></button>
+        <button type="button" class="btn btn-primary translate7"><a style="text-decoration: none; color: aliceblue;" href="signUp.html">Sign-up</a></button>
+      </div>
+
+      <!--Our Language Change Button-->
+      <form class="d-flex" style="margin-right: 10px;">
+        <!--We did type ="button" because the usual type="submit" will refresh the page and the arabic will be gone-->
+        <button class="btn btn-outline-success btnAr" type="button" onclick = "Arabic2();">عربي</button>
+      </form>
+      
+    </header>
+  </div>
+
+  <!--Carousel Section-->
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <!--Carousel 1-->
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="https://www.hearingaidsource.ca/wp-content/uploads/2018/10/Widex-Evoke-Dark-Grey.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#30a952"/>
+          <image href="https://play-lh.googleusercontent.com/FeOjzBn9WBZIH8WN2hugWPcZd1bY-IA4qTZI5qwtoAMa5D-XF5kHE8a6nD2DgXonlLQ" height="100%" width="100%" />
+        </svg>
+        
+        <div class="container">
+          <div style="color: #000;" class="carousel-caption text-start">
+            <h1>Sound Amplifier</h1>
+            <!--<p>Phonak is industry-leading expertise which bring you the best modern hearing technology for your hearing needs.</p>-->
+            <p><a class="btn btn-lg btn-primary translate8" href="https://play.google.com/store/apps/details?id=com.google.android.accessibility.soundamplifier&hl=en&gl=US">Download</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!--Carousel 2-->
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#30a952"/>
+          <image href="https://play-lh.googleusercontent.com/WGL-NJweVl14emnMqC8d8HRj0rm00jbA0lwOMA9uX2U_cHceLWAOctreTWD4iLDCdRk" height="100%" width="100%" /></svg>
+<br>    
+        <div class="container">
+          <div style="color: #000;" class="carousel-caption text-start">
+            <h1>Transcribe</h1>
+            <!--<p>Oticon Own is the world's first in-the-ear hearing aid that works more like the brain because it learned through experience.</p>
+              We removed the h1 and p tag because it won't go well with the image-->
+            
+            <p><a class="btn btn-lg btn-primary translate8" href="https://play.google.com/store/apps/details?id=com.google.audio.hearing.visualization.accessibility.scribe&hl=en&gl=US">Download</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!--Carousel 3-->
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#fff"/>
+          <image href="https://play-lh.googleusercontent.com/ND85iMy6XF9o2HcRT35H5y-jjFr-xDvQkZPOVnoI212ktTbKeBq50PntIVxKPO9-iIvf" height="100%" width="100%" /></svg>
+
+        <div class="container">
+          <div style="color: #000;" class="carousel-caption text-end">
+            <h1>Ava</h1>
+            <!--<p>All you should experience is a life lived, enjoyed and heard in the most natural way, while in the background, your hearing aids employ the most advanced sound</p>-->
+            <p><a class="btn btn-lg btn-primary translate8" href="https://apps.apple.com/us/app/ava-transcribe-voice-to-text/id1030067058">Download</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span style="background-color: #000;" class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span  style="background-color: #000; "class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Developers
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div id="devs" class="row">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#fff"/><text x="50%" y="50%" fill="#fff" dy=".3em">140x140</text>
+          <image href="https://play-lh.googleusercontent.com/FeOjzBn9WBZIH8WN2hugWPcZd1bY-IA4qTZI5qwtoAMa5D-XF5kHE8a6nD2DgXonlLQ" height="100%" width="100%" /></svg>
+        </svg>
+
+        <h2 class="fw-normal translate9">App</h2>
+        <p class="translate10">Sound Amplifier</p>
+        <p><a class="btn btn-secondary translateV" href="https://play.google.com/store/apps/details?id=com.google.android.accessibility.soundamplifier&hl=en&gl=US">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#fff"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+          <image href="https://play-lh.googleusercontent.com/WGL-NJweVl14emnMqC8d8HRj0rm00jbA0lwOMA9uX2U_cHceLWAOctreTWD4iLDCdRk" height="100%" width="100%" /></svg>
+        </svg>
+
+        <h2 class="fw-normal translate9">App</h2>
+        <p class="translate11">Transcribe</p>
+        <p><a class="btn btn-secondary translateV" href="https://play.google.com/store/apps/details?id=com.google.audio.hearing.visualization.accessibility.scribe&hl=en&gl=US">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#fff"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+          <image href="https://play-lh.googleusercontent.com/ND85iMy6XF9o2HcRT35H5y-jjFr-xDvQkZPOVnoI212ktTbKeBq50PntIVxKPO9-iIvf" height="100%" width="100%" />
+        </svg>
+
+        <h2 class="fw-normal translate9">App</h2>
+        <p class="translate12">Ava</p>
+        <p><a class="btn btn-secondary translateV" href="https://apps.apple.com/us/app/ava-transcribe-voice-to-text/id1030067058">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+    <!-- START THE FEATURETTES -->
+
+    <hr id="features" class="featurette-divider">
+
+    <h3 class="translateX4" style="text-align: center;">Some of the Apps that helps </h3>
+
+    <br><br><br><br><br><br>
+
+    <!--First Item-->
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1 translate13"> Sound Amplifier (Android)<span class="text-muted"></span></h2>
+        <p class="lead translateX"><strong>Sound Amplifier</strong> makes everyday conversations and surrounding sounds more accessible among people who are hard of hearing, using just your Android phone and a pair of headphones. Use Sound Amplifier to filter, augment, and amplify sounds around you and on your device.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#fff"/><text x="50%" y="50%" fill="#fff" dy=".3em">500x500</text>
+          <image href="https://play-lh.googleusercontent.com/FeOjzBn9WBZIH8WN2hugWPcZd1bY-IA4qTZI5qwtoAMa5D-XF5kHE8a6nD2DgXonlLQ" height="100%" width="100%" /></svg>
+        </svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!--Second Item-->
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1 translate14">Transcribe (Android)<span class="text-muted"></span></h2>
+        <p class="lead translate15"><strong>Live Transcribe & Sound Notifications </strong>  makes everyday conversations and surrounding sounds more accessible among people who are deaf and hard of hearing, using just your Android phone or tablet.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#fff"/><text x="50%" y="50%" fill="#fff" dy=".3em">500x500</text>
+          <image href="https://play-lh.googleusercontent.com/WGL-NJweVl14emnMqC8d8HRj0rm00jbA0lwOMA9uX2U_cHceLWAOctreTWD4iLDCdRk" height="100%" width="100%" /></svg>
+        </svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!--Third Item-->
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1 translate16">Ava (IOS)<span class="text-muted"></span></h2>
+        <p class="lead translate17"><strong>Ava</strong> uses captions to live transcribe voice to text to provide accessibility for people who are Deaf or hard of hearing (HoH). Ava's speech-to-text app provides 24/7 real-time audio transcription with about 5 errors in 100 words based on AI, and the highest possible accuracy with Ava Scribe at about 1 error in 100 words.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#fff"/><text x="50%" y="50%" fill="#fff" dy=".3em">500x500</text>
+          <image href="https://play-lh.googleusercontent.com/ND85iMy6XF9o2HcRT35H5y-jjFr-xDvQkZPOVnoI212ktTbKeBq50PntIVxKPO9-iIvf" height="100%" width="100%" /></svg>
+        </svg>
+
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+</main>
+
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5 class="translate18">Hearing Aids</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2 hover translate19"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2 hover translate28"><a href="index.html#devs" class="nav-link p-0 text-muted">Developers</a></li>
+          <li class="nav-item mb-2 hover translate4"><a href="index.html#features" class="nav-link p-0 text-muted">Features</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5 class="translate20">Helping Applications</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2 hover translate21"><a href="application.html" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2 hover translate4"><a href="application.html" class="nav-link p-0 text-muted">Features</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5 class="translateX5">Shop</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2 hover translateX21"><a href="Shop.html" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2 hover translate4"><a href="Shop.html#devs" class="nav-link p-0 text-muted">Featured</a></li>
+            <li class="nav-item mb-2 hover translate29"><a href="Shop.html#features" class="nav-link p-0 text-muted">Products</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5 class="translate24">Subscribe to our newsletter</h5>
+          <p class="translate25">Monthly digest of what's new and exciting from us.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden translate26">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary translate27" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p class="">&copy; 2022 Isma, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+    <script src="bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
